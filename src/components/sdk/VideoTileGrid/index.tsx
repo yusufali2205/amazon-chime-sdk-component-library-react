@@ -50,6 +50,12 @@ export const VideoTileGrid: React.FC<Props> = ({
   const gridSize =
     remoteSize > 1 && isVideoEnabled ? remoteSize + 1 : remoteSize;
 
+  console.log('Featured: ', featured);
+  console.log('IsLocalSharing: ', isVideoEnabled);
+  console.log('remoteSize: ', remoteSize);
+  console.log('gridSize: ', gridSize);
+  console.log(gridSize);
+
   return (
     <VideoGrid {...rest} size={gridSize} layout={featured ? 'featured' : null}>
       <ContentShare css="grid-area: ft;" />

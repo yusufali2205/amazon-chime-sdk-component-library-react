@@ -314,6 +314,11 @@ export const StyledGrid = styled.div<StyledGridProps>`
   ${({ size, featured }) =>
     ratioStyles[`${size}${featured ? '.featured' : ''}`] || ''}
   ${({ size, featured, ratio }) => {
+    console.log('Video Grid');
+    console.log('Size: ', size);
+    console.log('Featured: ', featured);
+    console.log('Ratio: ', ratio);
+
     if (!ratio) {
       return;
     }
